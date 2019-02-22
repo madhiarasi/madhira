@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+class swaoddeven
+{
+    public static void main(String ar[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String s1="";
+        for(int i=0;i<s.length();i++)
+        {
+            if(i%2==0)
+            {
+                s1=s1+String.valueOf(s.charAt(i+1));
+            }
+            else
+            {
+                s1=s1+String.valueOf(s.charAt(i-1));
+            }
+        }
+        
+        System.out.print(s1);
+    }
+}
